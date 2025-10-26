@@ -1,0 +1,7 @@
+Study of Multi-Cloud Strategy in Modern Enterprises
+sd9
+AWS
+Azure
+GCP
+Advantages: Scalability, Redundancy, Cost optimization, Flexibility
+Challenges: Integration, Security, Cost management
