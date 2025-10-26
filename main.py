@@ -12,13 +12,13 @@ def main():
     report.append(f"Project Title: {project_title}")
     report.append(f"Project ID: {project_id}")
     report.append("Cloud Platforms Used: " + ", ".join(cloud_platforms))
-    report.append("Advantages: " + advantages.replace('Advantages:', '').strip())
-    report.append("Challenges: " + challenges.replace('Challenges:', '').strip())
+    report.append("Advantages:" + advantages.split(":",1)[-1])
+    report.append("Challenges:" + challenges.split(":",1)[-1])
     
     with open('output.txt', 'w') as out:
         for line in report:
-            print(line)      # Show in workflow logs
-            out.write(line + '\n')  # Save to artifact
+            print(line)      # Shows in workflow logs
+            out.write(line + '\n')  # Saves to artifact
 
 if __name__ == "__main__":
     main()
