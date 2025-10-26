@@ -13,10 +13,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
-      - name: Install any requirements (if needed)
-        run: |
-          pip install --upgrade pip
+          python-version: '3.x'
       - name: Run main.py to create output report
         run: |
           python main.py
